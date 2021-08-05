@@ -1,0 +1,39 @@
+כתוב תוכנית אשר קולטת מהמשתמש שני ערכים: מס' תעודת זהות + שם מלd = {}
+id = input('please enetr your ID: ')
+while id != '-1':
+    name = input('please enter a name: ')
+
+    if d.get(id) == None:
+        d[id] = name
+    else:
+        print(f'key{id} elready exict')
+    id = input('please enter ID: ')
+
+for k,v in d.items():
+    print(f'{k} : {v}')
+
+
+
+write a program which will find all such numbers which are divisible by 7 but are not multiple of 5,
+betwee 2000 and 3000
+the numbers obtained should be printed in a comma separated sequence on a single line
+
+
+l1 = []
+for x in range(2000,3200):
+    if (x%7==0)and(x%5!=0):
+        l1.append(str(x))
+
+print(','.join(l1))
+
+
+
+
+please write a program which accepts a string from concole and print it in reverse order
+for example: 'hello'
+will become: 'olleh'
+
+
+x = input('please eneter a word to reverse it:')
+for char in range(len(x)-1,-1,-1):
+    print(x[char], end='')
