@@ -1,0 +1,37 @@
+use the ls command to list out all of the contents in your "/etc" and your "/run" folder etc > file1.txt run >file2.txt
+
+first use the ls command to list its content and redirect it to file called text1.txt
+then do the same with the"/run" folder but for a text file called text2.txt
+
+once we have text1.txt and text2.txt use the cat command to combine them  to a new file called text3.txt
+
+make a new directory and call it dir1, make a txt file with an echo command.
+
+copy or move the text2.txt to dir1 directory.
+
+download and install Docker.
+
+
+ls /etc >file1.txt
+ls/run >file2.txt
+catfile1.txt file2.txt > file3.txt
+mkdir dir1
+echo "this is a test >test.txt
+cd ~
+cp file2.txt dir1
+cd dir1
+ls
+cd ..
+rm file2.txt
+
+install docker:
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+sudo apt update
+
+sudo apt install docker-ce
