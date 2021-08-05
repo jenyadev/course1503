@@ -22,3 +22,15 @@ docker run -p 6377:6379 redis [will map port 6379 in docker to port 6377 in host
 tags:
 docker run redis:latest [=default]
 docker run redis:4.0 [=will run version 4.0]
+
+home work:
+1.run this image: kodekloud/webapp (it runs on port 5000).
+ map the image portto host port3001
+
+output:
+"welcome"
+
+2. attach a bash into the running container you created above
+
+3.now find the python file which contains the flask code and cat it(hint: use docker
+ps-no trunc to see the command in the container line
