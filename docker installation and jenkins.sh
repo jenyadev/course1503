@@ -1,4 +1,3 @@
-# install docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -8,6 +7,8 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 systemctl enable docker
 systemctl start docker
+
+
 # run jenkins
 mkdir -p /var/jenkins_home
 chown -R 1000:1000 /var/jenkins_home/
